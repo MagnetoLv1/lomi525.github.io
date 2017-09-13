@@ -3,8 +3,8 @@ layout: post
 title:  "Composer를 통한 패키지 설치및 의존성 관리하기"
 date:   2015-10-11 04:34:20
 categories: Composer
-highlight: true
-image: http://4.bp.blogspot.com/-IOD6VutWGlA/UW8Jq05M0DI/AAAAAAAAAeA/OVckWFybKqg/s1600/DSC01317.JPG
+highlight: false
+image: https://xpressengine.github.io/Composer-korean-docs/images/logo-composer-transparent.png
 ---
 
 
