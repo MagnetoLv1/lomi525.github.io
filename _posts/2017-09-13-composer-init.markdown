@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Composer를 통한 패키지 설치및 의존성 관리하기"
-date:   2015-10-11 04:34:20
+date:   2017-09-13 11:33:00
 categories: Composer
 highlight: false
-image: https://xpressengine.github.io/Composer-korean-docs/images/logo-composer-transparent.png
+image: https://getcomposer.org/img/logo-composer-transparent5.png
 ---
 
 
@@ -96,3 +96,12 @@ composer.json 파일을 composer update를 실행하면 의존성에 해당하�
 개발 환경에서는 `composer.json`파일로 `composer update` <br/>
 서비스 환경은 `composer.lock`파일로 `composer install`
 하여 같은 패키지가 설치되도록 한다.
+
+
+###### GIT ignore 
+
+`composer update` 를 하게 되면 프로젝트 폴더내에 vender폴더가 생성되고 그안에 패키지를이 설치된다.<br/>
+vender 폴더는  composer install 로 관리 되므로  VCS에서 제외하여야 한다.
+```gitignore
+/vendor
+```
