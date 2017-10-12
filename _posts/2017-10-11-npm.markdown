@@ -31,9 +31,9 @@ node.js를 설치하면 자동으로 설치된다. <br>
 3.  패키지 설치 <br>
 npm install -g <패키지><br>
 ![](https://image.prntscr.com/image/mWg4LsK4RS25E1aIZZheFA.jpeg)<br>
-* --save | -s  = dependencies <br>
-* --devDependencies | -D = devDependencies<br>
-* -g = global package
+` --save | -s  = dependencies `<br>
+` --devDependencies | -D = devDependencies`<br>
+` -g = global package`
 
 4. 패키지 업데이트
 npm update <패키지>
