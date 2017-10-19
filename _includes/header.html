@@ -2,7 +2,7 @@
 
   <div class="mdl-layout__header-row">
     <!-- Title -->
-    <span class="mdl-layout-title">{{ site.title }}</span>
+    <span class="mdl-layout-title" id="js-title">{{ site.title }}</span>
     <!-- Add spacer, to align navigation to the right -->
     <div class="mdl-layout-spacer"></div>
 
@@ -14,6 +14,8 @@
 
       <div class="mdl-textfield__expandable-holder">
         <input class="mdl-textfield__input super-search__input" type="text" id="js-search__input" />
+        <ul class="search__results is-hidden">
+        </ul>
       </div>
     </div>
 
@@ -30,6 +32,7 @@
     </ul>
   </div>
 </header>
+{% include search_result.html %}
 
 <div class="mdl-layout__drawer">
   <span class="mdl-layout-title">Menu</span>

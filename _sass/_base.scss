@@ -1,4 +1,11 @@
-/**
+
+:link,:visited {
+    color: #039be5;
+    outline: 0;
+    text-decoration: none;
+  }
+  
+  /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
@@ -82,3 +89,101 @@ pre {
 .mdl-navigation{
     border-bottom: 1px solid #EFEFEF;
 }
+
+
+
+.devsite-popout {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24),inset 0 4px 6px -4px rgba(0,0,0,.24);
+    margin-top: 57px;
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+    position: absolute;
+    transition: transform .2s,visibility .2s;
+    transform: translateY(0);
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .devsite-popout-closed {
+    transform: translateY(-110%);
+    visibility: hidden;
+  }
+  
+  
+  .devsite-suggest-results {
+    padding: 16px 0 16px 72px;
+  }
+  
+  .devsite-suggest-category,.devsite-suggest-project {
+    color: #757575;
+    font-size: 12px;
+  }
+  
+  .devsite-suggest-category:not(:first-child),.devsite-suggest-project:not(:first-child) {
+    border-top: 1px solid #ebebeb;
+    margin: 8px 0 0;
+    padding-top: 12px;
+  }
+  
+  .devsite-suggest-item a {
+    color: #212121;
+    display: block;
+    margin-left: -8px;
+    outline: 0;
+    padding: 8px;
+    transition: background .2s;
+  }
+  
+  .devsite-suggest-item.goog-menuitem-highlight a,.devsite-suggest-item a:focus {
+    background: #f7f7f7;
+    text-decoration: none;
+  }
+  
+  .devsite-suggest-item.goog-menuitem-highlight {
+    margin-left: -8px;
+    padding-left: 8px;
+  }
+  
+  .devsite-suggest-item b {
+    font-weight: 500;
+  }
+ 
+  
+  .devsite-suggest-footer {
+    margin-bottom: -16px;
+  }
+  
+ 
+  .devsite-suggestion-fragment+.devsite-suggestion-fragment::before {
+    content: "|";
+    margin: 0 8px;
+  }
+  
+  @media screen and (min-width:720px) {
+    .devsite-popout {
+        max-width: 500px;
+      margin-top:59px;
+      margin-left: -64px;
+      margin-right: 15px;
+      width: calc(100% + 120px);
+      right:0;
+    }
+  
+    .devsite-header-billboard-search-wrapper .devsite-popout {
+      margin-left: -32px;
+    }
+  
+   
+  
+    .devsite-suggest-category label {
+      font: 14px/22px Roboto,sans-serif;
+    }
+  }
+
+  
+  @media screen and (min-width:850px) {
+    .devsite-popout {
+      margin-top: 56px;
+    }
+  }
