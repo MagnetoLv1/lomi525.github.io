@@ -19,9 +19,9 @@ Composer를 사용하여 Legacy PHP를 모던 PHP로 쉽게 바꿀수 있다.
 
 
 * Linux 설치
-```
+{% endhighlight %}
 $ curl -sS https://getcomposer.org/installer | php
-```
+{% endhighlight %}
 * Windows 설치
 
      [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe)
@@ -30,11 +30,11 @@ $ curl -sS https://getcomposer.org/installer | php
 
 ###### Composer init
 프로젝트 폴더에서 composer init 으로 compser.json 을 자동으로 만들어 준다
-```bash
+{% highlight bash %}
 $ composer init
-```
+{% endhighlight %}
 
-```bash
+{% highlight bash %}
 
   Welcome to the Composer config generator
 
@@ -69,10 +69,10 @@ Search for a package:
 }
 
 Do you confirm generation [yes]? yes
-```
+{% endhighlight %}
 
 composer.json 파일이 생성됩니다.
-```json
+{% highlight json%}
 {
     "name": "composer/test",
     "description": "description",
@@ -85,7 +85,7 @@ composer.json 파일이 생성됩니다.
     "minimum-stability": "stable",
     "require": {}
 }
-```
+{% endhighlight %}
 
 ###### composer.json & compsoer.lock
 
@@ -102,6 +102,6 @@ composer.json 파일을 composer update를 실행하면 의존성에 해당하�
 
 `composer update` 를 하게 되면 프로젝트 폴더내에 vender폴더가 생성되고 그안에 패키지를이 설치된다.<br/>
 vender 폴더는  composer install 로 관리 되므로  VCS에서 제외하여야 한다.
-```gitignore
+{% endhighlight %}gitignore
 /vendor
-```
+{% endhighlight %}

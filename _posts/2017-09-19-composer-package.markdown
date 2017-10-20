@@ -12,7 +12,7 @@ image: https://getcomposer.org/img/logo-composer-transparent5.png
 
 PSR-4는 새로운 오토로딩 표준으로 정규화된 클래스이름을 규정하고 있으며 이를 준수하여 패키지를 개발할 경우 Composer를 통해 손쉽게 의존성 있는 모든 패키지를 로딩할 수 있다.
 
-{% highlight php%}
+{% highlight php %}
 \<NamespaceName>(\<SubNamespaceNames>)*\<ClassName>
 {% endhighlight %}
 
@@ -110,7 +110,7 @@ composer require lomi525/mypackage
 
 
 2. 테스트 하기
-{% highlight json%}
+{% highlight php%}
 <?php
 require 'vendor/autoload.php';
 use \Lomi525\MyPackage\Hello;

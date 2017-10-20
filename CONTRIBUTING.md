@@ -54,7 +54,7 @@ propose changes to this document in a pull request.
 
 ## Pull request and Issue Styleguide
 
-```
+{% endhighlight %}
 ### DESCRIPTION
 The jekyll-mdl exploded my browser, some performance errors appear.
 
@@ -73,4 +73,4 @@ The jekyll-mdl dont exploded my browser.
 
 ### REALITY
 The jekyll-mdl exploded my browser.
-```
+{% endhighlight %}
