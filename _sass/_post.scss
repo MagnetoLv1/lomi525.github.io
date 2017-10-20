@@ -38,3 +38,24 @@
     }
   }
 }
+
+
+
+@media (max-width: 479px) {
+  .post-main {
+    margin-top: -42vh;
+    .post-container{
+      width:unset;
+      padding: unset;
+    }
+    .post-section{
+      width:100%;
+      padding: 40px 20px;   
+      margin: unset;   
+    }
+  }
+
+  figure {
+    margin: 0;
+  }
+}
