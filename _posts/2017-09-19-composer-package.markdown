@@ -118,7 +118,6 @@ use \Lomi525\MyPackage\Hello;
 $oHello = new Hello(); 
 echo $oHello->world() . "\n";
 ```
-```php
 
 {% highlight php %}
 <?php
