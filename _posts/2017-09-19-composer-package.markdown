@@ -118,6 +118,16 @@ use \Lomi525\MyPackage\Hello;
 $oHello = new Hello(); 
 echo $oHello->world() . "\n";
 ```
+```php
+
+{% highlight php %}
+<?php
+require 'vendor/autoload.php';
+use \Lomi525\MyPackage\Hello;
+ 
+$oHello = new Hello(); 
+echo $oHello->world() . "\n";
+{% endhighlight %}
 
 
 ###### 개발중인 패키지 테스트 방법
