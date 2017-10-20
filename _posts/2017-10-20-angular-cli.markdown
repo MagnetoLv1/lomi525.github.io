@@ -16,7 +16,7 @@ Angular 프로젝트를 생성 및 환경설정을 구성해주는 커맨드 인
 
 #### Angular CLI 설치하기
 {% highlight bash %}
-$ npm install -g @angular/cli
+$ npm install -g @angular/cli 
 {% endhighlight %}
 
 node.js를 설치하면 자동으로 설치된다. <br>
