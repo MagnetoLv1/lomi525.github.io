@@ -35,4 +35,3 @@ disqus_shortname: 'gdgmanagua'
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
