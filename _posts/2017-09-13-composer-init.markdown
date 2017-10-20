@@ -19,7 +19,7 @@ Composer를 사용하여 Legacy PHP를 모던 PHP로 쉽게 바꿀수 있다.
 
 
 * Linux 설치
-{% endhighlight %}
+{% highlight bash %}
 $ curl -sS https://getcomposer.org/installer | php
 {% endhighlight %}
 * Windows 설치
