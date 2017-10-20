@@ -102,6 +102,7 @@ composer.json 파일을 composer update를 실행하면 의존성에 해당하�
 
 `composer update` 를 하게 되면 프로젝트 폴더내에 vender폴더가 생성되고 그안에 패키지를이 설치된다.<br/>
 vender 폴더는  composer install 로 관리 되므로  VCS에서 제외하여야 한다.
-{% endhighlight %}gitignore
+{% highlight bash%}
+gitignore
 /vendor
 {% endhighlight %}
