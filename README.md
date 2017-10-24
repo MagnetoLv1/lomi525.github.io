@@ -1,9 +1,9 @@
 # jekyll-mdl
-> A Jekyll theme based in Google Material Design Lite library.
+> GitHub Pasges의 Jekyll을 이용한 개인 블로그 사이트 입니다.
 
-## Demo
+## Site
 
-You can see the online demo here [www.gdgmanagua.org/jekyll-mdl](http://www.gdgmanagua.org/jekyll-mdl)
+프로젝트를 확인해볼 수 있는 사이트입니다. [lomi525.github.io](https://lomi525.github.io)
 
 ![Demo](https://raw.githubusercontent.com/gdg-managua/jekyll-mdl/master/jekyll-mdl-screen.png)
 
