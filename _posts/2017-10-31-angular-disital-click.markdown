@@ -203,3 +203,13 @@ export class ClockComponent implements OnInit {
 
 }
 <% endhighlight%>
+#### 실행해보기
+<% highlight bash%>
+ng serve
+<% endhighlight%>
+
+![](https://image.prntscr.com/image/vzhdkoNjRQWKvCu4aekuWQ.jpeg)
+
+### 참고사이트
+- [https://demo.tutorialzine.com/2013/06/digital-clock/](https://demo.tutorialzine.com/2013/06/digital-clock/)
+- [https://github.com/lomi525/digital-click](https://github.com/lomi525/digital-click)
