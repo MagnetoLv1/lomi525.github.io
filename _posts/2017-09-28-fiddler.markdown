@@ -4,7 +4,8 @@ title:  "웹 디버깅을 위한 피들어(Fiddler)"
 date:   2017-09-28 09:28:00
 categories: Fiddler
 highlight: false
-image: https://image.prntscr.com/image/r7lBPkTARFye4g3axXZ-9g.png
+image: https://image.prntscr.com/image/bGRArygATG_w6IXarcQl-g.jpeg
+description: HTTP와 HTTPS 의 프로토콜을 캡처하고 분석할수 있는 프리웨어 http 디버깅 툴
 ---
 
 

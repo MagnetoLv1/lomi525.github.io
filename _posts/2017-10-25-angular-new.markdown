@@ -4,7 +4,8 @@ title:  "Angular로 Hello World 프로젝트 시작하기"
 date:   2017-10-20 09:30:00
 categories: angular
 highlight: false
-image: https://image.prntscr.com/image/InDmxrHpTli-o9aaKF4V5A.jpeg
+image: https://image.prntscr.com/image/6LsJBjUKQHG95U_qBit3nA.jpeg
+description: Angular로 프로젝트를 생성해서 웹브라우져로 출력해보기
 ---
 
 
@@ -42,17 +43,18 @@ app.component.ts | 컴포넌트 스크립트 파일
 
 
 - app.component.html를 소스를 삭제하고 
-```html
+{% highlight html%}
 <div style="text-align:center">
   <h1>
     Hello {{name}}!
   </h1>
 </div>
-```
+{% endhighlight %}
 - app.component.ts에 name 변수를 만들어준다.
-```typescript
+{% highlight typescript%}
 export class AppComponent {
   name = 'world'
 }
-
-```
+{% endhighlight %}
+실행결과
+![](https://image.prntscr.com/image/p_D_F4EQS66unVUxNE11sg.jpeg)

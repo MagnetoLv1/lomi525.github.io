@@ -5,6 +5,7 @@ date:   2017-09-13 11:33:00
 categories: Composer
 highlight: false
 image: https://getcomposer.org/img/logo-composer-transparent5.png
+description: "Composer를 통해 손쉽게 의존성 있는 모든 패키지를 로딩할 수 있다."
 ---
 
 

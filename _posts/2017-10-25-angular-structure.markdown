@@ -4,7 +4,8 @@ title:  "Angular 프로젝트 구조"
 date:   2017-10-25 09:10:00
 categories: angular
 highlight: false
-image: https://image.prntscr.com/image/InDmxrHpTli-o9aaKF4V5A.jpeg
+image: https://image.prntscr.com/image/6LsJBjUKQHG95U_qBit3nA.jpeg
+description: Angular의 폴더구조 및 중요파일의 간단한 설명
 ---
 
 
@@ -30,7 +31,7 @@ src\environments  | 환경설정관련 폴더
 #### 중요파일
 - package.json  
 프로젝트의 모듈관리 및 스크립트를 관리하는 파일
-```json
+{% highlight json %}
 {
   "name": "hello-world",
   "version": "0.0.0",
@@ -80,10 +81,10 @@ src\environments  | 환경설정관련 폴더
     "typescript": "~2.3.3"
   }
 }
-```
+{% endhighlight %}
 - tsconfig.json  
 Typescript컴파일 옵션을 정의하는 파일
-```json
+{% highlight json %}
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -103,13 +104,33 @@ Typescript컴파일 옵션을 정의하는 파일
     ]
   }
 }
-
-```
+{% endhighlight %}
+{% highlight json %}
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ]
+  }
+}
+{% endhighlight %}
 
 
 - karma.conf.js  
 jasmine 을 이용한 단위테스트를 위한 설정파일
-```json
+{% highlight json %}
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -129,13 +150,12 @@ jasmine 을 이용한 단위테스트를 위한 설정파일
     ]
   }
 }
-
-```
+{% endhighlight %}
 
 
 - src\polyfills.ts  
-브라우저에서 es6 문법을 사용하기 위한 모듈들을 모아 놓은 파일
-```json
+브라우저에서 ES6 문법을 사용하기 위한 모듈들을 모아 놓은 파일
+{% highlight json %}
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -155,5 +175,4 @@ jasmine 을 이용한 단위테스트를 위한 설정파일
     ]
   }
 }
-
-```
+{% endhighlight %}

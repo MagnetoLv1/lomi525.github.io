@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Angular-cli를 이용해서 Angular 시작하기2"
+title:  "Google Sheet API"
 date:   2017-10-20 09:10:00
 categories: google
 highlight: false
-image: https://image.prntscr.com/image/InDmxrHpTli-o9aaKF4V5A.jpeg
+image: https://image.prntscr.com/image/J0D_5jzaTimnMoo9_f_W8Q.jpeg
+description: Google Sheet API 연동해보기
 ---
 
 

@@ -5,6 +5,7 @@ date:   2017-10-20 09:10:00
 categories: angular
 highlight: false
 image: https://image.prntscr.com/image/InDmxrHpTli-o9aaKF4V5A.jpeg
+description: 설명을 이럭ㅎ게 저렇게 한다
 ---
 
 

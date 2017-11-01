@@ -5,12 +5,13 @@ date:   2017-09-13 11:33:00
 categories: Composer
 highlight: false
 image: https://getcomposer.org/img/logo-composer-transparent5.png
+description: "Composer를 사용하여 코드 재사용성을 높이고 패키지를 통해 코드간의 의존성 관계를 정리할 수 있다."
 ---
 
 
-###### Composer를 사용하여 Legacy PHP를 모던PHP로
+###### Composer를 사용하여 날코딩의 PHP를 모던한 PHP로
 
-Composer를 사용하여 Legacy PHP를 모던 PHP로 쉽게 바꿀수 있다. 
+Composer를 사용하여 날코딩의 PHP를 모던한 PHP로 쉽게 바꿀수 있다. 
 코드 재사용성을 높이고 패키지를 통해 코드간의 의존성 관계를 정리할 수 있다.  다른 개발자와 협업을 고려한다면 조금씩 바꿔 나가야 할것이다.
 
 
