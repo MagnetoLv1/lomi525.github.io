@@ -9,22 +9,24 @@ description: Angular4 프로젝트로  5분만에 만들수 있는 디지털 시
 ---
 
 
-#### 프로젝트 생성
+##### 프로젝트 생성
 {% highlight bash %}
 ng new digital-clock
 {% endhighlight %}
 
-##### 컴포넌트 생성
+###### 컴포넌트 생성
 {% highlight bash %}
 ng g component number
 ng g component clock
 ng g component dot
 {% endhighlight %}
 
-angular-cli 로 컴포턴트를 생성 하면 자동으로 app.module.ts 에 등록된다
 
 ![](https://image.prntscr.com/image/1JRlfiqfQLu1S6cdDpTHoQ.jpeg)
 
+
+angular-cli 로 컴포턴트를 생성 하면 자동으로 app.module.ts 에 등록된다
+- app.module.ts
 {% highlight typescript %}
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -52,7 +54,7 @@ export class AppModule { }
 {% endhighlight %}
 
 
-###숫자판 만들기
+#### 숫자판 만들기
 ![8 Bits Digital Tube LED Display](https://image.prntscr.com/image/QvMjqKXkRbyWzN_xavZvoA.jpeg)
 number컴포넌트에 8개의 LED를 만들어 줍니다.
 - number.component.html
@@ -114,7 +116,7 @@ span.d7:after{border-width:5px 0 0 5px;border-top-color:inherit;bottom:-5px;}
 
 {% endhighlight %}
 
-### 도트 컴포넌트
+#### 도트 컴포넌트
 - dot.component.css
 {% highlight css%}
 
@@ -144,7 +146,7 @@ span.d7:after{border-width:5px 0 0 5px;border-top-color:inherit;bottom:-5px;}
 {% endhighlight %}
 
 
-### 시계 컴포넌트 만들기
+#### 시계 컴포넌트 만들기
 - clock.component.css  
 {% highlight css%}
  div{
@@ -203,13 +205,13 @@ export class ClockComponent implements OnInit {
 
 }
 {% endhighlight %}
-#### 실행해보기
+##### 실행해보기
 {% highlight bash%}
 ng serve
 {% endhighlight %}
 
 ![](https://image.prntscr.com/image/vzhdkoNjRQWKvCu4aekuWQ.jpeg)
 
-### 참고사이트
+#### 참고사이트
 - [https://demo.tutorialzine.com/2013/06/digital-clock/](https://demo.tutorialzine.com/2013/06/digital-clock/)
 - [https://github.com/lomi525/digital-click](https://github.com/lomi525/digital-click)
