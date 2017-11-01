@@ -10,22 +10,22 @@ description: Angular4 프로젝트로  5분만에 만들수 있는 디지털 시
 
 
 #### 프로젝트 생성
-<% highlight typescript%>
-ng new hello-world
-<% endhighlight%>
+{% highlight bash %}
+ng new digital-clock
+{% endhighlight %}
 
-##### number컴포넌트 생성
-<% highlight typescript%>
+##### 컴포넌트 생성
+{% highlight bash %}
 ng g component number
 ng g component clock
 ng g component dot
-<% endhighlight%>
+{% endhighlight %}
 
 angular-cli 로 컴포턴트를 생성 하면 자동으로 app.module.ts 에 등록된다
 
 ![](https://image.prntscr.com/image/1JRlfiqfQLu1S6cdDpTHoQ.jpeg)
 
-<% highlight typescript%>
+{% highlight typescript %}
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -49,14 +49,14 @@ import { DotComponent } from './dot/dot.component';
 })
 export class AppModule { }
 
-<% endhighlight%>
+{% endhighlight %}
 
 
 ###숫자판 만들기
 ![8 Bits Digital Tube LED Display](https://image.prntscr.com/image/QvMjqKXkRbyWzN_xavZvoA.jpeg)
 number컴포넌트에 8개의 LED를 만들어 줍니다.
 - number.component.html
-<% highlight html%>
+{% highlight html%}
   <span class="d1">  </span>
   <span class="d2">  </span>
   <span class="d3">  </span>
@@ -64,9 +64,9 @@ number컴포넌트에 8개의 LED를 만들어 줍니다.
   <span class="d5">  </span>
   <span class="d6">  </span>
   <span class="d7">  </span>
-<% endhighlight%>
+{% endhighlight %}
 - number.component.css
-<% highlight css%>
+{% highlight css%}
 :host{text-align:left;position:relative;width: 28px;height:50px;display:inline-block;margin:0 4px;}
 /* 1 */
 :host.number1 .d5,:host.number1 .d7{opacity:1;}
@@ -112,11 +112,11 @@ span.d7{width:5px;height:14px;top:32px;right:0;}
 span.d7:before{border-width:0 0 5px 5px;border-bottom-color:inherit;top:-5px;}
 span.d7:after{border-width:5px 0 0 5px;border-top-color:inherit;bottom:-5px;}
 
-<% endhighlight%>
+{% endhighlight %}
 
 ### 도트 컴포넌트
 - dot.component.css
-<% highlight css%>
+{% highlight css%}
 
 :host{
 	text-align:left;
@@ -141,12 +141,12 @@ span.d7:after{border-width:5px 0 0 5px;border-top-color:inherit;bottom:-5px;}
 	top:34px;
 }
 
-<% endhighlight%>
+{% endhighlight %}
 
 
 ### 시계 컴포넌트 만들기
 - clock.component.css  
-<% highlight css%>
+{% highlight css%}
  div{
 	text-align:left;
 	position:relative;
@@ -165,10 +165,10 @@ span.d7:after{border-width:5px 0 0 5px;border-top-color:inherit;bottom:-5px;}
 	transition:0.25s;
 }
 
-<% endhighlight%>  
+{% endhighlight %}  
 
 - clock.component.css
-<% highlight html%>
+{% highlight html%}
 <app-number [ngClass]="'number'+now[0]"></app-number>
 <app-number [ngClass]="'number'+now[1]"></app-number>
 <app-dot></app-dot>
@@ -177,10 +177,10 @@ span.d7:after{border-width:5px 0 0 5px;border-top-color:inherit;bottom:-5px;}
 <app-dot></app-dot>
 <app-number [ngClass]="'number'+now[4]"></app-number>
 <app-number [ngClass]="'number'+now[5]"></app-number>
-<% endhighlight%>
+{% endhighlight %}
 
 - clock.component.ts
-<% highlight typescript%>
+{% highlight typescript %}
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -202,11 +202,11 @@ export class ClockComponent implements OnInit {
   }
 
 }
-<% endhighlight%>
+{% endhighlight %}
 #### 실행해보기
-<% highlight bash%>
+{% highlight bash%}
 ng serve
-<% endhighlight%>
+{% endhighlight %}
 
 ![](https://image.prntscr.com/image/vzhdkoNjRQWKvCu4aekuWQ.jpeg)
 
