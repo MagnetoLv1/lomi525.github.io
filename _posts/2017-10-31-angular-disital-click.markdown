@@ -1,13 +1,16 @@
 ---
 layout: post
 title:  "Angular로 디지털 시계 만들기"
-date:   2017-10-20 09:30:00
+date:   2017-10-31 09:30:00
 categories: angular
 highlight: false
 image: https://image.prntscr.com/image/qIQim7bJQH6Zc7TmNL_ExA.jpeg
 description: Angular4 프로젝트로  5분만에 만들수 있는 디지털 시계
 ---
 
+###
+[Demo](https://embed.plnkr.co/CJyXLU/)  
+[GitHub Source](https://github.com/lomi525/digital-click)
 
 ##### 프로젝트 생성
 {% highlight bash %}
@@ -214,4 +217,4 @@ ng serve
 
 #### 참고사이트
 - [https://demo.tutorialzine.com/2013/06/digital-clock/](https://demo.tutorialzine.com/2013/06/digital-clock/)
-- [https://github.com/lomi525/digital-click](https://github.com/lomi525/digital-click)
+
