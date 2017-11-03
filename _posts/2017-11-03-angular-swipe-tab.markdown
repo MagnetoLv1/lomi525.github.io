@@ -6,6 +6,7 @@ categories: angular
 highlight: false
 image: https://image.prntscr.com/image/nP3uRJtOT3m3VruUUvMNlA.jpeg
 description: Angular4 Touch로 스와이프 되는 탭만들기 
+color: 'seagreen'
 ---
 
 ####Angular Swpie tap
@@ -102,7 +103,8 @@ export class DragDirective {
   // @HostListener('touchmove', ['$event'])
   onMove(event) {
     if (event.touches) {
-      this.moveX = event.touches[0].clientX - this.touchX;
+      this.moveX = event.touches[0].clientX - this.touchX;      //움직인 거리
+      //wrap 컴포넌츠를 transform 으로 이동시킴
       this.renderer.setElementStyle(this.elementRef.nativeElement, 'transition', null);
       this.renderer.setElementStyle(this.elementRef.nativeElement, '-webkit-transform', 'translate3d(' + (this.positionX + this.moveX) + 'px,0px,0px)');
       this.renderer.setElementStyle(this.elementRef.nativeElement, 'transform', 'translate3d(' + (this.positionX + this.moveX) + 'px,0px,0px)');
@@ -113,11 +115,14 @@ export class DragDirective {
   // @HostListener('touchend', ['$event'])     
   // @HostListener('touchcancel', ['$event']) 
   onEnd(event) {
+          //움직이는 크기자 다음페이지로 넘어갈수 있는지 확인
     if (Math.abs(this.moveX) > this.oversize) {
+            //양수면 오른쪽, 음수면 왼쪽으로 이동
       this.next(this.moveX > 0 ? 1 : -1);
     }
     else {
-      this.next(0);
+        //자기자리로 이동함
+        this.next(0);
     }
   }
 
@@ -196,8 +201,8 @@ export class DragDirective {
     this.arrow = arrow;
     let pos = this.containerWidth * arrow;
     this.positionX += pos;
-    this.renderer.setElementStyle(this.elementRef.nativeElement, '-webkit-transform', '-webkit-transform 0.2s ease-in');
-    this.renderer.setElementStyle(this.elementRef.nativeElement, 'transition', 'transform 0.2s');
+    this.renderer.setElementStyle(this.elementRef.nativeElement, '-webkit-transform', '-webkit-transform 0.2s ease-in'); //애니메이션 추가
+    this.renderer.setElementStyle(this.elementRef.nativeElement, 'transition', 'transform 0.2s');       //애니메이션 추가
     this.renderer.setElementStyle(this.elementRef.nativeElement, '-webkit-transform', 'translate3d(' + this.positionX + 'px, 0px, 0px)');
   }
 }
