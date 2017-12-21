@@ -19,7 +19,7 @@ color: 'seagreen'
 ### 개발환경에서 .env 파일일 아닌 .evn.devlopment 파일을 참조하는 방법
 매번 복상(cp .env.development .env) 하는 방법이 번거롭다면 웹서버 환경변수에 APP_ENV값을 추가 합니다.
 
-- 아파치
+- APACHE
 {% highlight html %}
 <VirtualHost *:80>
 
@@ -28,12 +28,29 @@ color: 'seagreen'
 {% endhighlight %}
 
 
+- NGINX
+{% highlight html %}
+<VirtualHost *:80>
+    location / {
+    ...
+      fastcgi_param   APP_ENV development;
+    ...
+    }
+</VirtualHost>
+{% endhighlight %}
+
+
+
 ### 설정파일 캐시(php artisan config:cache)
 설정파일을 캐시해서 사용할 경우 config 폴더에 있는 모든파일에 내용을 
 project_folder/bootstrap/cache/config.php 를 생성하여 참조 하게 됩니다.
-- 명령어 (php artisan config:cache)
+{% highlight bash %}
+php artisan config:cache 
+{% endhighlight %}
 
 단, 개발서버의 경우에는 artisan 명령어로 생성하였기 때문에  웹서버의 APP_ENV값을 알수 없으므로 
 --env 옵션을 추가하여야 합니다.
 
-- php artisan config:cache --env development
+{% highlight bash %}
+php artisan config:cache --env development
+{% endhighlight %}
