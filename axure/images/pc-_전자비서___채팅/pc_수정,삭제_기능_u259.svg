@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="47px" height="22px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1 0 0 1 -465 -557 )">
+    <image preserveAspectRatio="none" style="overflow:visible" width="47" height="22" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAWCAYAAABQUsXJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADCSURBVFhH7ZBBDoMwEAP7sX6uz8kHOVL54MpabZaF+kAkRppLUMzA6/3ZdjfYjLrB5hMf0WjqBptPfESjqRtsnoofY/ys0GjqBpvt+BhcfYBGUzfYbMXPQmfnGk3dYPMwvvrDt46vwsFt46+GA42mGdjoGsFmGj+7QKpnQKNpBt/TMYLNMj67lJ1FNJq6weZhvMZ2woFGUzfYbMXTLhpN3WDzVPzMiEZTN9hM4/9Fo6kbbD7xEY2mbrC5fvyqLhy/7V+Hcq0GLBwAmQAAAABJRU5ErkJggg==" x="465px" y="557px" />
+    <path d="M 465.5 578.5  L 465.5 557.5  L 511.5 557.5  L 511.5 578.5  L 465.5 578.5  Z " stroke-width="1" stroke="#d9001b" fill="none" />
+  </g>
+</svg>
